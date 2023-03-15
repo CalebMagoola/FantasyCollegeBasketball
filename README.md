@@ -20,3 +20,5 @@ Each October, 12 million individuals across North America eagerly carve an hour 
 * API
 * Trello
 * Microsoft Teams
+* LucidChart
+* Oracle SQL Developer & SQL
