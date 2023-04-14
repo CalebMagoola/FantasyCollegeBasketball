@@ -20,11 +20,15 @@ Jack’s Team                    0 - 1
 Raf’s Team                      0 - 1
 
 `}</Text>
-      <Image
+      <Pressable
         style={styles.tabBarIcon}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
     </View>
   );
 };

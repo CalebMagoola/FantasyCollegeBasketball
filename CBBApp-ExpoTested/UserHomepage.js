@@ -8,11 +8,15 @@ const UserHomepage = () => {
 
   return (
     <View style={styles.userHomepage}>
-      <Image
-        style={styles.tabBarIcon}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+      <Pressable
+        style={[styles.iconPosition, styles.tabBarIcon]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
       <Pressable
         style={[styles.myTeams, styles.teamsLayout]}
         onPress={() => navigation.navigate("MyTeamsHome")}
@@ -39,8 +43,7 @@ const UserHomepage = () => {
         onPress={() => navigation.navigate("CreateALeague")}
       >
         <View style={[styles.playerChild, styles.playerLayout]} />
-        <Text style={[styles.createALeague, styles.myLeaguesTypo]}>{`Create a
-League`}</Text>
+        <Text style={[styles.createALeague, styles.myLeaguesTypo]}>{`Create a League`}</Text>
       </Pressable>
     </View>
   );

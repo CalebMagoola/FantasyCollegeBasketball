@@ -74,11 +74,15 @@ const PlayerPool = () => {
           source={require("./assets/vector.png")}
         />
       </View>
-      <Image
+      <Pressable
         style={[styles.tabBarIcon, styles.bestPpgPosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
     </View>
   );
 };

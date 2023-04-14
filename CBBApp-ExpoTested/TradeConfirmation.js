@@ -53,11 +53,15 @@ const TradeConfirmation = () => {
           Cancel Trade
         </Text>
       </Pressable>
-      <Image
-        style={[styles.tabBarIcon, styles.advancePosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+      <Pressable
+        style={[styles.advancePosition, styles.tabBarIcon]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
     </View>
   );
 };

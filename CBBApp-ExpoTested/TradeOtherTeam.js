@@ -9,11 +9,15 @@ const TradeOtherTeam = () => {
   return (
     <View style={[styles.tradeOtherTeam, styles.iconLayout]}>
       <View style={styles.tradeOtherTeamChild} />
-      <Image
-        style={[styles.tabBarIcon, styles.advancePosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+      <Pressable
+        style={[styles.advancePosition, styles.tabBarIcon]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
       <Image
         style={[styles.vectorIcon, styles.vectorIconLayout]}
         resizeMode="cover"

@@ -106,11 +106,15 @@ const TeamLeaguePlayerPool = () => {
           source={require("./assets/arrowleft.png")}
         />
       </Pressable>
-      <Image
+      <Pressable
         style={[styles.tabBarIcon, styles.bestPpgPosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
     </View>
   );
 };

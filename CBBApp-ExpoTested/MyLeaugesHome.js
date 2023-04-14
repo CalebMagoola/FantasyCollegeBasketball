@@ -74,11 +74,15 @@ const MyLeaugesHome = () => {
           Join a league
         </Text>
       </View>
-      <Image
+      <Pressable
         style={[styles.tabBarIcon, styles.tabBarIconPosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
     </View>
   );
 };

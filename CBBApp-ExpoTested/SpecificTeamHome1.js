@@ -106,11 +106,15 @@ const SpecificTeamHome1 = () => {
           Pending Trades
         </Text>
       </View>
-      <Image
+      <Pressable
         style={styles.tabBarIcon}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
     </View>
   );
 };

@@ -26,11 +26,15 @@ const MyTeamsHome = () => {
           Software engineering league
         </Text>
       </Pressable>
-      <Image
-        style={[styles.tabBarIcon, styles.iconPosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
+      <Pressable
+        style={[styles.iconPosition, styles.tabBarIcon]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/tab-bar.png")}
+        />
+      </Pressable>
     </View>
   );
 };
