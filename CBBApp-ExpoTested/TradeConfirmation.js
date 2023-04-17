@@ -8,6 +8,29 @@ const TradeConfirmation = () => {
 
   return (
     <View style={[styles.tradeConfirmation, styles.iconLayout]}>
+      <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
       <View style={[styles.tradeConfirmationChild, styles.tradeLayout]} />
       <View style={[styles.tradeConfirmationItem, styles.tradeLayout]} />
       <View
@@ -53,11 +76,14 @@ const TradeConfirmation = () => {
           Cancel Trade
         </Text>
       </Pressable>
+<<<<<<< Updated upstream
       <Image
         style={[styles.tabBarIcon, styles.advancePosition]}
         resizeMode="cover"
         source={require("./assets/tab-bar.png")}
       />
+=======
+>>>>>>> Stashed changes
     </View>
   );
 };
@@ -225,6 +251,16 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 844,
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default TradeConfirmation;

@@ -10,10 +10,35 @@ const TradeOtherTeam = () => {
     <View style={[styles.tradeOtherTeam, styles.iconLayout]}>
       <View style={styles.tradeOtherTeamChild} />
       <Image
+<<<<<<< Updated upstream
         style={[styles.tabBarIcon, styles.advancePosition]}
         resizeMode="cover"
         source={require("./assets/tab-bar.png")}
       />
+=======
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
+>>>>>>> Stashed changes
       <Image
         style={[styles.vectorIcon, styles.vectorIconLayout]}
         resizeMode="cover"
@@ -649,6 +674,16 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 844,
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default TradeOtherTeam;

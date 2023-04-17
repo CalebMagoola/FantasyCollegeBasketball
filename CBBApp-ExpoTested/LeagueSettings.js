@@ -5,6 +5,29 @@ import { Color, FontFamily, Border, FontSize } from "./GlobalStyles";
 const LeagueSettings = () => {
   return (
     <View style={styles.leagueSettings}>
+      <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
       <View style={styles.leagueSettingsChild} />
       <Text
         style={[styles.softwareEngineeringLeague, styles.scorePerPointTypo]}
@@ -24,11 +47,14 @@ Score per block:                 2.0
 Score per steal:                  2.0
 
 Score per turnover:          -2.0`}</Text>
+<<<<<<< Updated upstream
       <Image
         style={styles.tabBarIcon}
         resizeMode="cover"
         source={require("./assets/tab-bar.png")}
       />
+=======
+>>>>>>> Stashed changes
     </View>
   );
 };
@@ -78,6 +104,16 @@ const styles = StyleSheet.create({
     height: 844,
     overflow: "hidden",
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default LeagueSettings;

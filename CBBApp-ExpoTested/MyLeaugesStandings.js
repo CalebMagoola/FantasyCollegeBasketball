@@ -5,26 +5,54 @@ import { Color, FontFamily, FontSize, Border } from "./GlobalStyles";
 const MyLeaugesStandings = () => {
   return (
     <View style={styles.myLeaugesStandings}>
+      <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
       <View style={styles.myLeaugesStandingsChild} />
       <Text style={[styles.softwareEngineeringLeague, styles.jakesTeam1Typo]}>
         Software engineering league
       </Text>
       <Text
         style={[styles.jakesTeam1, styles.jakesTeam1Typo]}
-      >{`Jake’s Team                    1 - 0
+      >{`Jake's Team                    1 - 0
 
-Caleb’s team                  1 - 0
+Caleb's team                  1 - 0
 
-Jack’s Team                    0 - 1
+Jack's Team                    0 - 1
 
-Raf’s Team                      0 - 1
+Raf's Team                      0 - 1
 
 `}</Text>
+<<<<<<< Updated upstream
       <Image
         style={styles.tabBarIcon}
         resizeMode="cover"
         source={require("./assets/tab-bar.png")}
       />
+=======
+>>>>>>> Stashed changes
     </View>
   );
 };
@@ -74,6 +102,16 @@ const styles = StyleSheet.create({
     height: 844,
     overflow: "hidden",
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default MyLeaugesStandings;
