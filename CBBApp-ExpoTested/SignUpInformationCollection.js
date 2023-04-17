@@ -1,8 +1,11 @@
 import * as React from "react";
-import { StyleSheet, View, Text, Image } from "react-native";
+import { StyleSheet, View, Text, Image, Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { Color, FontSize, FontFamily, Border } from "./GlobalStyles";
 
 const SignUpInformationCollection = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.signUpInformationCollection}>
       <View
@@ -25,17 +28,32 @@ const SignUpInformationCollection = () => {
       <Text style={[styles.enterUsername, styles.enterTypo]}>
         enter username:
       </Text>
-      <Image
+      <Pressable
         style={styles.arrowLeftIcon}
-        resizeMode="cover"
-        source={require("./assets/arrowleft1.png")}
-      />
-      <Image
+        onPress={() => navigation.navigate("HomePostLaunch")}
+        >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/arrowleft1.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.rectangleIcon, styles.signUp]}
+        onPress={() => navigation.navigate("LogIn")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/rectangle-1.png")}
+        />
+        <Text style={styles.logIn2}>Sign Up</Text>
+      </Pressable>
+
+      {/* <Image
         style={styles.rectangleIcon}
         resizeMode="cover"
         source={require("./assets/rectangle-1.png")}
       />
-      <Text style={styles.signUp}>Sign up</Text>
+      <Text style={styles.signUp}>Sign up</Text> */}
     </View>
   );
 };
@@ -100,6 +118,24 @@ const styles = StyleSheet.create({
     borderRadius: Border.br_41xl,
     width: 284,
     height: 95,
+    position: "absolute",
+  },
+  logIn2: {
+    marginLeft: -95,
+    top: 0,
+    left: "50%",
+    fontSize: FontSize.size_11xl,
+    color: Color.darkslateblue,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: 190,
+    textAlign: "center",
+    fontFamily: FontFamily.latoBold,
+    fontWeight: "700",
+    lineHeight: 50,
+    letterSpacing: 0,
+    height: 65,
     position: "absolute",
   },
   signUp: {
