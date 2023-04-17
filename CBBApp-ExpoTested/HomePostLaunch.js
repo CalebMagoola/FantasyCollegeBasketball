@@ -7,7 +7,7 @@ const HomePostLaunch = () => {
   const navigation = useNavigation();
 
   return (
-    <Pressable style={styles.homePostLaunch}>
+    <View style={styles.homePostLaunch}>
       <Text style={[styles.collegeFantasy, styles.logInFlexBox]}>
         COLLEGE FANTASY
       </Text>
@@ -38,7 +38,7 @@ const HomePostLaunch = () => {
         />
         <Text style={[styles.logIn, styles.logLayout]}>Sign up</Text>
       </Pressable>
-    </Pressable>
+    </View>
   );
 };
 
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   collegeFantasy: {
     top: 126,
     left: 43,
-    fontSize: 60,
+    fontSize: 40,
     fontWeight: "800",
     fontFamily: FontFamily.openSansExtrabold,
     color: Color.white,
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     left: "50%",
     fontSize: FontSize.size_11xl,
     letterSpacing: 0,
-    lineHeight: 24,
+    lineHeight: 60,
     fontWeight: "700",
     fontFamily: FontFamily.latoBold,
     color: Color.darkslateblue,

@@ -27,11 +27,16 @@ const LogIn = () => {
       <Text style={[styles.enterPassword, styles.enterTypo]}>
         enter password
       </Text>
-      <Image
+      
+      <Pressable
         style={styles.arrowLeftIcon}
-        resizeMode="cover"
-        source={require("./assets/arrowleft1.png")}
-      />
+        onPress={() => navigation.navigate("HomePostLaunch")}
+        >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/arrowleft1.png")}
+        />
+      </Pressable>
     </View>
   );
 };
@@ -84,7 +89,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 60,
     letterSpacing: 0,
     height: 65,
     position: "absolute",
