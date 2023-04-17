@@ -36,7 +36,7 @@ const PlayerPool = () => {
       <Text style={[styles.playerPool1, styles.sortByFlexBox]}>
         Player Pool
       </Text>
-      <Text style={[styles.sortBy, styles.sortByFlexBox]}>Sort By:</Text>
+      <Text style={[styles.sortBy, styles.sortByFlexBox2]}>Sort By:</Text>
       <Text style={[styles.positionAllContainer, styles.allTypo]}>
         <Text style={styles.position}>Position:</Text>
         <Text style={styles.all}> All | PG | SG | SF | PF | C</Text>
@@ -171,7 +171,19 @@ const styles = StyleSheet.create({
     color: Color.black,
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 30,
+    letterSpacing: 0,
+    position: "absolute",
+  },
+  sortByFlexBox2: {
+    justifyContent: "center",
+    textAlign: "center",
+    alignItems: "center",
+    display: "flex",
+    color: Color.black,
+    fontFamily: FontFamily.latoBold,
+    fontWeight: "700",
+    lineHeight: 17,
     letterSpacing: 0,
     position: "absolute",
   },
@@ -198,7 +210,7 @@ const styles = StyleSheet.create({
     color: Color.black,
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 15,
     letterSpacing: 0,
     fontSize: FontSize.size_3xs,
   },
