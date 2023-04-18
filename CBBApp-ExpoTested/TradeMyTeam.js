@@ -48,7 +48,7 @@ const TradeMyTeam = () => {
       <Text style={[styles.pg, styles.pgTypo]}>PG</Text>
       <Text style={[styles.sg, styles.pgTypo]}>SG</Text>
       <Text style={[styles.sf, styles.sfPosition]}>SF</Text>
-      <Text style={[styles.pf, styles.pfTypo]}>PF</Text>
+      <Text style={[styles.pf, styles.pfTypo2]}>PF</Text>
       <Pressable
         style={styles.markArmstrong}
         onPress={() => navigation.navigate("TeamPlayerDetails")}
@@ -223,7 +223,18 @@ const styles = StyleSheet.create({
     color: Color.black,
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 10,
+    letterSpacing: 0,
+    fontSize: FontSize.size_3xs,
+  },
+  pfTypo2: {
+    alignItems: "center",
+    display: "flex",
+    textAlign: "left",
+    color: Color.black,
+    fontFamily: FontFamily.latoBold,
+    fontWeight: "700",
+    lineHeight: 30,
     letterSpacing: 0,
     fontSize: FontSize.size_3xs,
   },

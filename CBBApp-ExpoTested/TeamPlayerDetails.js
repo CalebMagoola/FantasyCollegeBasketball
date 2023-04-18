@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 40,
     letterSpacing: 0,
   },
   positionTypo: {
@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 40,
     letterSpacing: 0,
     fontSize: FontSize.size_11xl,
     top: 0,
