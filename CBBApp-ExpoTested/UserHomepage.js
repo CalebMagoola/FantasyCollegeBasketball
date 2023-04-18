@@ -11,10 +11,6 @@ const UserHomepage = () => {
       <Image
         style={styles.tabBarIcon}
         resizeMode="cover"
-<<<<<<< Updated upstream
-        source={require("./assets/tab-bar.png")}
-      />
-=======
         source={require("./assets/navBackground.png")}
       />
 
@@ -38,7 +34,6 @@ const UserHomepage = () => {
         />
       </Pressable>
 
->>>>>>> Stashed changes
       <Pressable
         style={[styles.myTeams, styles.teamsLayout]}
         onPress={() => navigation.navigate("MyTeamsHome")}

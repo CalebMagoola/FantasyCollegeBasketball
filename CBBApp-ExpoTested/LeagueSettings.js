@@ -46,15 +46,8 @@ Score per block:                 2.0
 
 Score per steal:                  2.0
 
-Score per turnover:          -2.0`}</Text>
-<<<<<<< Updated upstream
-      <Image
-        style={styles.tabBarIcon}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
+Score per turnover:          -2.0`}
+      </Text>
     </View>
   );
 };

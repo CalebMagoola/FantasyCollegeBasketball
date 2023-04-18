@@ -51,14 +51,6 @@ const MyTeamsHome = () => {
           Software engineering league
         </Text>
       </Pressable>
-<<<<<<< Updated upstream
-      <Image
-        style={[styles.tabBarIcon, styles.iconPosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
     </View>
   );
 };

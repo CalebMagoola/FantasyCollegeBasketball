@@ -10,12 +10,6 @@ const TradeOtherTeam = () => {
     <View style={[styles.tradeOtherTeam, styles.iconLayout]}>
       <View style={styles.tradeOtherTeamChild} />
       <Image
-<<<<<<< Updated upstream
-        style={[styles.tabBarIcon, styles.advancePosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
         style={styles.tabBarIcon}
         resizeMode="cover"
         source={require("./assets/navBackground.png")}
@@ -38,7 +32,6 @@ const TradeOtherTeam = () => {
           source={require("./assets/settingsIcon.png")}
         />
       </Pressable>
->>>>>>> Stashed changes
       <Image
         style={[styles.vectorIcon, styles.vectorIconLayout]}
         resizeMode="cover"

@@ -144,14 +144,6 @@ const TradeMyTeam = () => {
           Cancel Trade
         </Text>
       </Pressable>
-<<<<<<< Updated upstream
-      <Image
-        style={[styles.tabBarIcon, styles.advancePosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
     </View>
   );
 };

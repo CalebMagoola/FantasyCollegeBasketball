@@ -45,14 +45,6 @@ Jack's Team                    0 - 1
 Raf's Team                      0 - 1
 
 `}</Text>
-<<<<<<< Updated upstream
-      <Image
-        style={styles.tabBarIcon}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
     </View>
   );
 };

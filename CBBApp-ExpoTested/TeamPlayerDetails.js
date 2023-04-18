@@ -81,14 +81,6 @@ const TeamPlayerDetails = () => {
           Add player
         </Text>
       </View>
-<<<<<<< Updated upstream
-      <Image
-        style={[styles.tabBarIcon, styles.addPlayer1Position]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
     </View>
   );
 };

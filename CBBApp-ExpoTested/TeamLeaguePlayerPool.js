@@ -129,14 +129,6 @@ const TeamLeaguePlayerPool = () => {
           source={require("./assets/arrowleft.png")}
         />
       </Pressable>
-<<<<<<< Updated upstream
-      <Image
-        style={[styles.tabBarIcon, styles.bestPpgPosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
     </View>
   );
 };

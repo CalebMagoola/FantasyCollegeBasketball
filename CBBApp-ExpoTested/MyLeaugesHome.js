@@ -97,14 +97,6 @@ const MyLeaugesHome = () => {
           Join a league
         </Text>
       </View>
-<<<<<<< Updated upstream
-      <Image
-        style={[styles.tabBarIcon, styles.tabBarIconPosition]}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
     </View>
   );
 };

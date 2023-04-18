@@ -131,14 +131,6 @@ const SpecificTeamHome1 = () => {
           Pending Trades
         </Text>
       </View>
-<<<<<<< Updated upstream
-      <Image
-        style={styles.tabBarIcon}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
-=======
->>>>>>> Stashed changes
     </View>
   );
 };
