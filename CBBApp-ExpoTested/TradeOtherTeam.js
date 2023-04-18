@@ -9,20 +9,34 @@ const TradeOtherTeam = () => {
   return (
     <View style={[styles.tradeOtherTeam, styles.iconLayout]}>
       <View style={styles.tradeOtherTeamChild} />
+      <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
       <Pressable
-        style={[styles.advancePosition, styles.tabBarIcon]}
+        style={[styles.homeIconPosition]}
         onPress={() => navigation.navigate("UserHomepage")}
       >
         <Image
           resizeMode="cover"
-          source={require("./assets/tab-bar.png")}
+          source={require("./assets/homeIcon.png")}
         />
       </Pressable>
-      {/* <Image
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
+      <Image
         style={[styles.vectorIcon, styles.vectorIconLayout]}
         resizeMode="cover"
         source={require("./assets/vector1.png")}
-      /> */}
+      />
       <View
         style={[styles.tradeOtherTeamItem, styles.selectPlayersFromLayout]}
       />
@@ -664,6 +678,16 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 844,
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default TradeOtherTeam;

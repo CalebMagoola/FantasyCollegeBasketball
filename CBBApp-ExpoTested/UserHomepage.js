@@ -8,15 +8,32 @@ const UserHomepage = () => {
 
   return (
     <View style={styles.userHomepage}>
+      <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+
       <Pressable
-        style={[styles.iconPosition, styles.tabBarIcon]}
+        style={[styles.homeIconPosition]}
         onPress={() => navigation.navigate("UserHomepage")}
       >
         <Image
           resizeMode="cover"
-          source={require("./assets/tab-bar.png")}
+          source={require("./assets/homeIcon.png")}
         />
       </Pressable>
+
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
+
       <Pressable
         style={[styles.myTeams, styles.teamsLayout]}
         onPress={() => navigation.navigate("MyTeamsHome")}
@@ -91,7 +108,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   tabBarIcon: {
-    width: 390,
+    width: "100%",
     height: 105,
     left: 0,
     top: 0,
@@ -157,6 +174,16 @@ const styles = StyleSheet.create({
     height: 844,
     overflow: "hidden",
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default UserHomepage;

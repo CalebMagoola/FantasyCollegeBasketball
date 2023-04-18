@@ -10,6 +10,29 @@ const TradeMyTeam = () => {
     <View style={styles.tradeMyTeam}>
       <View style={styles.tradeMyTeamChild} />
       <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
+      <Image
         style={[styles.vectorIcon, styles.vectorIconLayout]}
         resizeMode="cover"
         source={require("./assets/vector1.png")}
@@ -120,15 +143,6 @@ const TradeMyTeam = () => {
         <Text style={[styles.cancelTrade, styles.cancelLayout]}>
           Cancel Trade
         </Text>
-      </Pressable>
-      <Pressable
-        style={[styles.advancePosition, styles.tabBarIcon]}
-        onPress={() => navigation.navigate("UserHomepage")}
-      >
-        <Image
-          resizeMode="cover"
-          source={require("./assets/tab-bar.png")}
-        />
       </Pressable>
     </View>
   );
@@ -587,6 +601,16 @@ const styles = StyleSheet.create({
     height: 844,
     overflow: "hidden",
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default TradeMyTeam;

@@ -8,6 +8,29 @@ const MyLeaugesHome = () => {
 
   return (
     <View style={styles.myLeaugesHome}>
+      <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
       <View style={styles.myLeaugesHomeChild} />
       <Pressable
         style={[styles.league1, styles.leagueLayout]}
@@ -74,15 +97,6 @@ const MyLeaugesHome = () => {
           Join a league
         </Text>
       </View>
-      <Pressable
-        style={[styles.tabBarIcon, styles.tabBarIconPosition]}
-        onPress={() => navigation.navigate("UserHomepage")}
-      >
-        <Image
-          resizeMode="cover"
-          source={require("./assets/tab-bar.png")}
-        />
-      </Pressable>
     </View>
   );
 };
@@ -275,6 +289,16 @@ const styles = StyleSheet.create({
     height: 844,
     overflow: "hidden",
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default MyLeaugesHome;

@@ -5,6 +5,29 @@ import { Color, FontFamily, FontSize } from "./GlobalStyles";
 const DraftLobby = () => {
   return (
     <View style={styles.draftLobby}>
+      <Image
+        style={styles.tabBarIcon}
+        resizeMode="cover"
+        source={require("./assets/navBackground.png")}
+      />
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
       <Text style={[styles.round1, styles.round1Typo]}>Round 1:</Text>
       <Text style={[styles.nextPickR13, styles.round1Typo]}>
         Next Pick: R1.3
@@ -16,11 +39,6 @@ const DraftLobby = () => {
       <Text style={styles.availablePlayersSorted}>
         Available players sorted by projections
       </Text>
-      <Image
-        style={styles.tabBarIcon}
-        resizeMode="cover"
-        source={require("./assets/tab-bar.png")}
-      />
     </View>
   );
 };
@@ -93,6 +111,16 @@ const styles = StyleSheet.create({
     height: 844,
     overflow: "hidden",
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default DraftLobby;
