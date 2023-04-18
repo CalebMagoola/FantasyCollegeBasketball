@@ -27,7 +27,7 @@ const SpecificTeamHome1 = () => {
 
       <Pressable
         style={[styles.settingsIconPosition]}
-        onPress={() => navigation.navigate("UserHomepage")}
+        onPress={() => navigation.navigate("Settings")}
       >
         <Image
           resizeMode="cover"

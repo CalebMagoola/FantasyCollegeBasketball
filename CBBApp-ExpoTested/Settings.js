@@ -9,10 +9,29 @@ const Settings = () => {
   return (
     <View style={styles.settings}>
       <Image
-        style={[styles.tabBarIcon, styles.tabBarIconPosition]}
+        style={styles.tabBarIcon}
         resizeMode="cover"
-        source={require("../assets/tab-bar.png")}
+        source={require("./assets/navBackground.png")}
       />
+      <Pressable
+        style={[styles.homeIconPosition]}
+        onPress={() => navigation.navigate("UserHomepage")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/homeIcon.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={[styles.settingsIconPosition]}
+        onPress={() => navigation.navigate("Settings")}
+      >
+        <Image
+          resizeMode="cover"
+          source={require("./assets/settingsIcon.png")}
+        />
+      </Pressable>
+
       <View style={[styles.changePassword, styles.changeLayout1]}>
         <View style={[styles.changePasswordChild, styles.changeLayout1]} />
         <View style={[styles.changePasswordItem, styles.changeLayout]} />
@@ -162,6 +181,16 @@ const styles = StyleSheet.create({
     height: 844,
     overflow: "hidden",
   },
+  homeIconPosition: {
+    left: "13%",
+    top: "5.5%",
+    position: "absolute",
+  },
+  settingsIconPosition: {
+    left: "77%",
+    top: "5.5%",
+    position: "absolute",
+  }
 });
 
 export default Settings;
