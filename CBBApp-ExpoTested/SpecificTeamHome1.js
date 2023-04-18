@@ -91,7 +91,7 @@ const SpecificTeamHome1 = () => {
         style={styles.markArmstrong}
         onPress={() => navigation.navigate("TeamPlayerDetails")}
       >
-        <Text style={[styles.markArmstrong1, styles.bTypo]}>
+        <Text style={[styles.markArmstrong1, styles.bTypo2]}>
           Mark Armstrong
         </Text>
       </Pressable>
@@ -152,7 +152,18 @@ const styles = StyleSheet.create({
     color: Color.black,
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 30,
+    letterSpacing: 0,
+    fontSize: FontSize.size_3xs,
+  },
+  bTypo2: {
+    alignItems: "center",
+    display: "flex",
+    textAlign: "left",
+    color: Color.black,
+    fontFamily: FontFamily.latoBold,
+    fontWeight: "700",
+    lineHeight: 10,
     letterSpacing: 0,
     fontSize: FontSize.size_3xs,
   },
@@ -254,7 +265,7 @@ const styles = StyleSheet.create({
     color: Color.black,
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 45,
     letterSpacing: 0,
     fontSize: FontSize.size_3xs,
   },
@@ -501,7 +512,7 @@ const styles = StyleSheet.create({
     color: Color.black,
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 18,
     letterSpacing: 0,
     fontSize: FontSize.size_3xs,
   },

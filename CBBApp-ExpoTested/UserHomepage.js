@@ -60,8 +60,7 @@ const UserHomepage = () => {
         onPress={() => navigation.navigate("CreateALeague")}
       >
         <View style={[styles.playerChild, styles.playerLayout]} />
-        <Text style={[styles.createALeague, styles.myLeaguesTypo]}>{`Create a
-League`}</Text>
+        <Text style={[styles.createALeague, styles.myLeaguesTypo]}>{`Create a League`}</Text>
       </Pressable>
     </View>
   );

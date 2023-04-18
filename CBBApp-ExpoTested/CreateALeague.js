@@ -394,7 +394,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 45,
     letterSpacing: 0,
   },
   createLeagueButton: {

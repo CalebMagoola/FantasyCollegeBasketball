@@ -124,16 +124,16 @@ const TradeOtherTeam = () => {
         style={styles.jordanLongino}
         onPress={() => navigation.navigate("TeamPlayerDetails")}
       >
-        <Text style={[styles.jordanLongino1, styles.pfTypo]}>
+        <Text style={[styles.jordanLongino1, styles.pfTypo2]}>
           Jordan Longino
         </Text>
       </Pressable>
       <Text style={[styles.calebsTeam, styles.teamFlexBox]}>Caleb’s Team</Text>
-      <Image
+      {/* <Image
         style={[styles.vectorIcon9, styles.vectorIconLayout]}
         resizeMode="cover"
         source={require("./assets/vector2.png")}
-      />
+      /> */}
       <Pressable
         style={styles.arrowLeft}
         onPress={() => navigation.navigate("TradeMyTeam")}
@@ -265,7 +265,18 @@ const styles = StyleSheet.create({
     color: Color.black,
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 20,
+    letterSpacing: 0,
+    fontSize: FontSize.size_3xs,
+  },
+  pfTypo2: {
+    alignItems: "center",
+    display: "flex",
+    textAlign: "left",
+    color: Color.black,
+    fontFamily: FontFamily.latoBold,
+    fontWeight: "700",
+    lineHeight: 13,
     letterSpacing: 0,
     fontSize: FontSize.size_3xs,
   },
@@ -301,7 +312,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   vectorIcon: {
-    top: "43.36%",
+    top: "41%",
     bottom: "54.27%",
     left: "75.9%",
     right: "18.97%",
@@ -489,7 +500,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   vectorIcon1: {
-    top: "49.29%",
+    top: "47%",
     bottom: "48.34%",
     left: "75.9%",
     right: "18.97%",
@@ -499,7 +510,7 @@ const styles = StyleSheet.create({
     height: "2.37%",
   },
   vectorIcon2: {
-    top: "55.57%",
+    top: "53%",
     bottom: "42.06%",
     left: "75.9%",
     right: "18.97%",
@@ -509,7 +520,7 @@ const styles = StyleSheet.create({
     height: "2.37%",
   },
   vectorIcon3: {
-    top: "61.61%",
+    top: "59%",
     bottom: "36.02%",
     left: "75.9%",
     right: "18.97%",
@@ -519,7 +530,7 @@ const styles = StyleSheet.create({
     height: "2.37%",
   },
   vectorIcon4: {
-    top: "67.54%",
+    top: "64%",
     bottom: "30.09%",
     left: "75.9%",
     right: "18.97%",
@@ -529,7 +540,7 @@ const styles = StyleSheet.create({
     height: "2.37%",
   },
   vectorIcon5: {
-    top: "37.44%",
+    top: "35.8%",
     bottom: "60.19%",
     left: "75.9%",
     right: "18.97%",
@@ -539,7 +550,7 @@ const styles = StyleSheet.create({
     height: "2.37%",
   },
   vectorIcon6: {
-    top: "79.62%",
+    top: "75%",
     bottom: "18.01%",
     left: "75.9%",
     right: "18.97%",
@@ -549,7 +560,7 @@ const styles = StyleSheet.create({
     height: "2.37%",
   },
   vectorIcon7: {
-    top: "73.7%",
+    top: "70%",
     right: "18.72%",
     bottom: "23.93%",
     left: "76.15%",
@@ -559,7 +570,7 @@ const styles = StyleSheet.create({
     maxWidth: "100%",
   },
   vectorIcon8: {
-    top: "85.55%",
+    top: "81%",
     bottom: "12.09%",
     left: "75.9%",
     right: "18.97%",
@@ -603,7 +614,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   vectorIcon9: {
-    height: "0.95%",
+    height: "0.1%",
     width: "2.05%",
     top: "30.81%",
     right: "24.1%",
