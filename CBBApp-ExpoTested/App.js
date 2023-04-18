@@ -19,6 +19,7 @@ import CreateALeague from "./CreateALeague";
 import LogIn from "./LogIn";
 import SignUpInformationCollection from "./SignUpInformationCollection";
 import HomePostLaunch from "./HomePostLaunch";
+import Settings from "./Settings";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";

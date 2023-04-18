@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Image, StyleSheet, View, Text, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { FontSize, Color, FontFamily, Border } from "../GlobalStyles";
+import { FontSize, Color, FontFamily, Border } from "./GlobalStyles";
 
 const Settings = () => {
   const navigation = useNavigation();
@@ -53,9 +53,9 @@ const Settings = () => {
         <Image
           style={styles.signUpButtonChild}
           resizeMode="cover"
-          source={require("../assets/rectangle-1.png")}
+          source={require("./assets/rectangle-1.png")}
         />
-        <Text style={[styles.signOut, styles.signLayout]}>{`Sign out `}</Text>
+        <Text style={[styles.signOut, styles.signLayout]}>{`Sign out`}</Text>
       </Pressable>
     </View>
   );
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   tabBarIcon: {
-    width: 390,
+    width: "100%",
     height: 105,
     position: "absolute",
   },
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: FontFamily.latoBold,
     fontWeight: "700",
-    lineHeight: 24,
+    lineHeight: 45,
     letterSpacing: 0,
     height: 47,
     top: 0,
